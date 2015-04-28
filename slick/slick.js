@@ -2047,7 +2047,7 @@
             _.$slider.trigger("edge", [_, _.swipeDirection()]);
         }
 
-        if (_.touchObject.swipeLength >= _.touchObject.minSwipe) {
+        if (_.touchObject.swipeLength >= _.touchObject.minSwipe && (_.swipeDirection() == 'left' || _.swipeDirection() == 'right')) {
 
             switch (_.swipeDirection()) {
                 case 'left':
